@@ -1,13 +1,116 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+html {
+	font-size: 10px;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+* {
+	box-sizing: border-box;
+	font-family: Verdana, Tahoma, sans-serif;
+}
+
+body {
+	margin: 0;
+	padding: 0;
+	background-color: rgb(244, 244, 244);
+	color: rgb(73, 73, 73);
+}
+
+p {
+	font-size: 1.6rem;
+}
+
+small {
+	font-size: 1.2rem;
+}
+
+.container {
+	margin: 0 auto;
+	max-width: 1000px;
+	padding: 40px;
+}
+
+.title {
+	font-size: 4.4rem;
+	text-align: center;
+}
+
+/* FORM STYLES */
+
+.form {
+	display: grid;
+	margin-bottom: 2rem;
+}
+
+.label {
+	font-size: 1.6rem;
+	margin: 0.5rem;
+	text-transform: uppercase;
+}
+
+.input {
+	font-size: 1.6rem;
+	padding: 0.5rem 2rem;
+	line-height: 2.8rem;
+	border-radius: 20px;
+	border: 1px solid #ddd;
+	margin-bottom: 1rem;
+}
+
+.input:active {
+	border: none;
+}
+
+.button {
+	background-color: rgba(10, 10, 10, 0.75);
+	color: rgb(244, 244, 244);
+	padding: 1rem 2rem;
+	border: 1px solid rgba(0, 0, 0, 0.75);
+	border-radius: 20px;
+	font-size: 1.5rem;
+	letter-spacing: 2px;
+	cursor: pointer;
+	transition: background-color 250ms;
+}
+
+.button:hover {
+	background-color: rgba(0, 0, 0, 0.85);
+}
+
+@media (min-width: 786px) {
+	.form {
+		grid-template-columns: auto 1fr auto;
+		grid-gap: 1rem;
+		align-items: center;
+	}
+
+	.input {
+		margin-bottom: 0;
+	}
+}
+
+@media (max-width: 700px) {
+	.card {
+		display: block !important;
+	}
+}
+
+/* CARD STYLES */
+
+.card {
+	margin: 2rem;
+	padding: 1rem 2rem;
+	border-radius: 10px;
+	box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.25);
+	background-color: white;
+	display: flex;
+}
+
+.card--title {
+	margin-bottom: 0.5rem;
+	font-size: 3rem;
+}
+
+.card--image {
+	margin: 0 auto;
+	display: block;
+	padding: 2rem;
 }
