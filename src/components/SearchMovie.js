@@ -33,7 +33,7 @@ function SearchMovie() {
 					className="input"
 					type="text"
 					name="query"
-					placeholder="i.e. Jurassic Park"
+					placeholder="i.e. Tom and Jerry"
 					value={query}
 					onChange={(event) => {
 						return setQuery(event.target.value);
